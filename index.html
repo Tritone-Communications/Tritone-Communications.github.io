@@ -1,1 +1,62 @@
-<h1>Tritone!</h1>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Tritone info page</title>
+        <link rel="stylesheet" href="/potato.css">
+    </head>
+    <body>
+        <div class="container">
+          <div id="hlb">
+<header>
+                <img class="-- --logo" src="/trilogo.png" height="30" style="margin-left: 7px;">
+                <div class="-- --tabs">
+                    <a href="/" class="-- --active">Home</a>
+                    <a href="/entertainment">Entertainment</a>
+                    <a href="/support">Support</a>
+                </div>
+            </header>
+            <div class="-- --block"></div>
+            <div class="formstuff">
+                <div class="faw">
+                <form action="/redirector.html" method="get">
+                    <input name="q" placeholder="Enter your search terms..." autocomplete="off" id="bpt">
+                    <button style="background: linear-gradient(to bottom, #FE047D, #a1024f);
+                color: white;
+                box-shadow: 1px 1px 4px rgba(0,0,0,0.3), -1px 1px 4px rgba(0,0,0,0.3), -1px -1px 4px rgba(0,0,0,0.3), 1px -1px 4px rgba(0,0,0,0.3); border: none; padding: 3px;">Vroom vroom!</button>
+                </form>
+                    <?php if($_GET["twi"] == "true"): ?>
+                    <div><button id="help-btn">Help</button></div>
+                    <?php else: ?>
+                    <div><span id="weather-summary"></span><span><span id="weather--">, </span>
+                    <span id="weather-temp"></span> <span id="weather-desc"></span></span><button id="help-btn">Help</button></div>
+                    <?php endif; ?>
+                    </div></div>
+</div>
+                <h2>Add websites</h2>
+                    <p>Send a private message to <b><a href="https://forum.frutigeraeroarchive.org/memberlist.php?mode=viewprofile&u=2190">this account</a></b> with a list of websites.<p>
+                <h3>All categories</h3>
+               	<ul>
+                    <li>Music</li>
+                    <li>Movies</li>
+                    <li>Tickets</li>
+                    <li>Forums</li>
+                    <li>Blogs</li>
+                    <li>Podcasts</li>
+                    <li>Social</li>
+                    <li>Government</li>
+                </ul>
+                <h4>Coming soon:</h4>
+                <ul>
+                    <li>Education</li>
+                    <li>Romance</li>
+                </ul>
+                <h2>Add categories</h2>
+                	<p>Send a private message to <b><a href="https://forum.frutigeraeroarchive.org/memberlist.php?mode=viewprofile&u=2190">this account</a></b> with your idea and an explanation how it would make Tritone better.<p>
+                <h2>And most importantly...</h2>
+                <p>We work hard on making Tritone provide the best results. Every user contributes to it. Have fun using it!</p>
+                    <br>&copy; Tritone Communications. All rights reserved. <a href="/sd.php">log out</a>
+            </div>
+        </div>
+    </body>
+</html>
